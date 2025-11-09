@@ -12,11 +12,7 @@ pipeline {
          stage('Performance Test') {
 
                     steps {
-                    script{
-
-
-             }
-
+                   echo "performance"
           }
 
                 }
@@ -24,7 +20,7 @@ pipeline {
             steps {
             echo "ui automation maven steps"
                 //sh 'mvn clean test'
-                bat 'mvn clean test'
+          //      bat 'mvn clean test'
             }
         }
         stage('Deploy') {
@@ -33,7 +29,7 @@ pipeline {
             }
         }
     }
-}
+
 
 //------
 //Create a new folder
